@@ -1,12 +1,25 @@
-// Sass Code //
+/////////////// Sass Code /////////////
+
 $color_red : rgb(255, 17, 17);
+
 a{
   color: #ee0000;
   &:hover{
     text-decoration: none;
   }
 }
+@mixin nomargin{
+    margin: 0;
+    padding: 0;
+}
 
+@mixin rounded-corners {
+  $rounded-corner-radius: 6px;
+  -webkit-border-radius: $rounded-corner-radius;
+  -moz-border-radius: $rounded-corner-radius;
+  -ms-border-radius: $rounded-corner-radius;
+  border-radius: $rounded-corner-radius;
+}
 
 html, body
 {
@@ -15,8 +28,7 @@ html, body
 
 body
 {
-  margin: 0px;
-  padding: 0px;
+  @include nomargin;
   background: #181818;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 12pt;
@@ -27,8 +39,7 @@ body
 
 h1, h2, h3
 {
-  margin: 0;
-  padding: 0;
+  @include nomargin;
 }
 
 p, ol, ul
@@ -46,12 +57,6 @@ p
 {
   line-height: 180%;
 }
-
-strong
-{
-}
-
-
 
 .container
 {
@@ -179,7 +184,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
   margin-top: 2em;
   padding: 1.40em 3em;
   background: $color_red;
-  border-radius: 6px;
+  @include rounded-corners;
   text-decoration: none;
   font-weight: 700;
   font-size: 1em;

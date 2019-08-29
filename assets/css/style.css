@@ -11,8 +11,8 @@ html, body {
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background: #181818;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 12pt;
@@ -151,6 +151,9 @@ ul.contact li a.icon-rss:before {
   margin-top: 2em;
   padding: 1.40em 3em;
   background: #ff1111;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
