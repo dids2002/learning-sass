@@ -1,3 +1,13 @@
+// Sass Code //
+$color_red : rgb(255, 17, 17);
+a{
+  color: #ee0000;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
 html, body
 {
   height: 100%;
@@ -41,15 +51,7 @@ strong
 {
 }
 
-a
-{
-  color: #ee0000;
-}
 
-a:hover
-{
-  text-decoration: none;
-}
 
 .container
 {
@@ -176,7 +178,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
   letter-spacing: 0.10em;
   margin-top: 2em;
   padding: 1.40em 3em;
-  background: #2651a8;
+  background: $color_red;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
@@ -371,7 +373,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 
 #menu .active a
 {
-  background: #2651a8;
+  background: $color_red;
   border-radius: 6px;
   color: rgba(255,255,255,1);
 }
@@ -480,7 +482,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 {
   position: relative;
   padding: 7em 0em 7em 0em;
-  background: #2651a8;
+  background: $color_red;
   background-size: cover;
   text-align: center;
 }
@@ -500,7 +502,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 #welcome .button
 {
   background: #FFF;
-  color: #2651a8;
+  color: $color_red;
 }
 
 
