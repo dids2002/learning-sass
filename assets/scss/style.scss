@@ -1,5 +1,6 @@
 /////////////// Sass Code /////////////
 @import 'variables';
+
 a{
   color: #ee0000;
   &:hover{
@@ -55,7 +56,7 @@ body
   font-family: 'Didact Gothic', sans-serif;
   font-size: 12pt;
   font-weight: 200;
-  color: #FFF;
+  color: $color_white;
 }
 
 
@@ -173,7 +174,8 @@ ul.contact li span
 
 ul.contact li a
 {
-  color: #FFF;
+
+  color : $color_white;
 }
 
 ul.contact li a:before
@@ -185,7 +187,7 @@ ul.contact li a:before
   line-height: 40px;
   border-radius: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: $color_white;
 }
 
 ul.contact li a.icon-twitter:before { background: #2DAAE4; }
@@ -210,14 +212,14 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
   text-decoration: none;
   font-weight: 700;
   font-size: 1em;
-  color: #FFF;
+  color: $color_white;
 }
 
 .button-alt
 {
   padding: 1em 2em;
   border-color: rgba(0,0,0,.8);
-  color: #FFF;
+  color: $color_white;
 }
 
 /*********************************************************************************/
@@ -317,7 +319,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 {
   position: relative;
   padding: 5em 0em 7em 0em;
-  background: #FFF;
+  background: $color_white;
 }
 
 /*********************************************************************************/
@@ -507,7 +509,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 
 #welcome .button
 {
-  background: #FFF;
+  background: $color_white;
   color: $color_red;
 }
 
