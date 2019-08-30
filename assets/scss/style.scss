@@ -1,7 +1,5 @@
 /////////////// Sass Code /////////////
-
-$color_red : rgb(255, 17, 17);
-
+@import 'variables';
 a{
   color: #ee0000;
   &:hover{
@@ -20,6 +18,30 @@ a{
   -ms-border-radius: $rounded-corner-radius;
   border-radius: $rounded-corner-radius;
 }
+#menu ul {
+          display: inline-block;
+          li{
+            display: block;
+            float: left;
+            text-align: center;
+            a{
+              padding: 1em 1.5em;
+              letter-spacing: 1px;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 0.8em;
+              color: rgba(255,255,255,0.80);
+            }
+            span{
+              padding: 1em 1.5em;
+              letter-spacing: 1px;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 0.8em;
+              color: rgba(255,255,255,0.80);
+            }
+          }
+        }
 
 html, body
 {
@@ -350,27 +372,6 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
   right: 0;
 }
 
-#menu ul
-{
-  display: inline-block;
-}
-
-#menu li
-{
-  display: block;
-  float: left;
-  text-align: center;
-}
-
-#menu li a, #menu li span
-{
-  padding: 1em 1.5em;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: rgba(255,255,255,0.80);
-}
 
 #menu li:hover a, #menu li.active a, #menu li.active span
 {

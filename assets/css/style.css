@@ -6,6 +6,34 @@ a:hover {
   text-decoration: none;
 }
 
+#menu ul {
+  display: inline-block;
+}
+
+#menu ul li {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+#menu ul li a {
+  padding: 1em 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#menu ul li span {
+  padding: 1em 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 html, body {
   height: 100%;
 }
@@ -289,25 +317,6 @@ ul.contact li a.icon-rss:before {
   position: absolute;
   top: 4.5em;
   right: 0;
-}
-
-#menu ul {
-  display: inline-block;
-}
-
-#menu li {
-  display: block;
-  float: left;
-  text-align: center;
-}
-
-#menu li a, #menu li span {
-  padding: 1em 1.5em;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 #menu .active a {
